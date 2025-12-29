@@ -8,8 +8,8 @@ for _ in range(M):
     i, j = map(int, input().split())
     while i < j:
         basket[i-1], basket[j-1] = basket[j-1], basket[i-1]
-        i=i+1
-        j = j-1
+        i = i + 1
+        j = j - 1
         
 for data in basket:
     print(data, end=" ")
