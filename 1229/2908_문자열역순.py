@@ -10,7 +10,7 @@ for c in B:
     reverse_B = c + reverse_B
 print(max(int(reverse_A),int(reverse_B)))
 
-
+### 이 방식으로는 문자열 역순 불가 ###
 # i = 0
 # j = len(A)-1
 # while i < j:
