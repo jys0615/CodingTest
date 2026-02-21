@@ -15,3 +15,4 @@ for i in range(3, n+1):
     rs.append((rs[i-1] + rs[i-2])%100007)
 
 print(rs[n])
+
