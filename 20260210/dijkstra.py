@@ -70,7 +70,8 @@ edge = [[] for _ in range(V+1)]
 dist = [INF] * (V+1)
 
 for i in range(E):
-    u,v,w = map(int, input().split()) # u->v로 가는 길이 있고 그 비용이 w
+    u,v,w = map(int, input().split()) 
+    # u->v로 가는 길이 있고 그 비용이 w
     edge[u].append([w,v])
 
 dist[K] = 0
