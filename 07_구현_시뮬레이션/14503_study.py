@@ -29,11 +29,11 @@ while 1:
         map[y][x] = 2 # 현재 위치를 청소
         cnt += 1
     sw = False
-    for i in range(1, 5):
+    for i in range(1, 5): # 현재 칸의 주변 4칸 중
         ny = y + dy[d-i]
         nx = x + dx[d-i]
         if 0<=ny<N and 0<=nx<M:
-            if map[ny][nx] == 0:
+            if map[ny][nx] == 0: # 청소되지 않은 빈칸이 있는 경우
                 # 그 방향으로 회전한 다음 한 칸을 전진하고 1번부터 진행한다.
                 d = (d - i + 4) % 4 # 계속 양수로 유지를 해준다.
                 y = ny
